@@ -224,6 +224,12 @@
       cursor: pointer;
     }
 
+    .source {
+      top: -10px;
+      position: relative;
+      display: inline-block;
+    }
+
     @media screen and (max-width: 800px) {
       body {
         font-size: 16px;
@@ -285,18 +291,18 @@
     <h2>Facebook bo poskušal:</h2>
     <ul>
       <li>slediti tvoji lokaciji,
-        <a class="source" href="https://www.facebook.com/policy.php">vir</a>
-        <a class="source" href="https://techcrunch.com/2014/04/18/facebook-location-advertising/">vir</a>
-        <a class="source" href="https://hackernoon.com/your-facebook-data-is-creepy-as-hell-319ae47117e6">vir</a>
+        <a class="source" href="https://www.facebook.com/policy.php">[1]</a><span class="source">,</span>
+        <a class="source" href="https://techcrunch.com/2014/04/18/facebook-location-advertising/">[2]</a></a><span class="source">,</span>
+        <a class="source" href="https://hackernoon.com/your-facebook-data-is-creepy-as-hell-319ae47117e6">[3]</a>
       </li>
       <li>slediti tvojim telefonskim pogovorom in sporočilom,
-        <a class="source" href="https://newsroom.fb.com/news/2018/03/fact-check-your-call-and-sms-history/">vir</a>
+        <a class="source" href="https://newsroom.fb.com/news/2018/03/fact-check-your-call-and-sms-history/">[1]</a>
       </li>
       <li>slediti večini tvojih spletnih aktivnosti,
-        <a class="source" href="https://newsroom.fb.com/news/2014/06/making-ads-better-and-giving-people-more-control-over-the-ads-they-see/">vir</a>
+        <a class="source" href="https://newsroom.fb.com/news/2014/06/making-ads-better-and-giving-people-more-control-over-the-ads-they-see/">[1]</a>
       </li>
       <li>shranjevati večino tvojih aktivnosti na Facebooku.
-        <a class="source" href="https://www.facebook.com/about/privacy/update#what-kinds-of-information-do-we-collect">vir</a>
+        <a class="source" href="https://www.facebook.com/about/privacy/update#what-kinds-of-information-do-we-collect">[1]</a>
       </li>
     </ul>
 
@@ -425,7 +431,7 @@
         <div class="primary-info">Facebook služi denar tako, da podjetjem, organizacijam in tujim državam omogoča, da ti prikazujejo oglase na podlagi tega, kar Facebook ve o tebi. Ti oglasi lahko poskušajo vplivati na tvoje mnenje ali na tvoje nakupovalne navade.</div>
         <div class="secondary-info">
           <p>Facebook ne prodaja tvojih podatkov, prodaja pa “dostop” do tebe. Oglaševalci plačajo Facebooku za to, da pokaže oglase ljudem, ki jih bodo najverjetneje zanimali. Ker Facebook toliko ve o svojih uporabnikih, lahko pravim ljudem pokaže prave oglase.
-            <a class="source" href="http://fortune.com/2017/05/05/facebook-digital-advertising-business-model/">vir</a>
+            <a class="source" href="http://fortune.com/2017/05/05/facebook-digital-advertising-business-model/">[1]</a>
           </p>
           <ul>
             <li>Tovrstno “ciljano oglaševanje” koristi oglaševalcem, saj jim dopušča, da oglase prikazujejo specifičnemu občinstvu, tj. ljudem, ki so bolj verjetno zainteresirani zanje.
@@ -444,12 +450,12 @@
       </li>
       <li>
         <p>Facebook uporablja oblikovalske trike, s katerimi te prisilijo, da razkriješ več osebnih informacij, kot si prvotno želel/-a.
-          <a class="source" href="https://medium.com/@GabeRealMedina/is-facebook-messenger-still-experimenting-with-dark-ux-bcbeac45dcb">vir</a>
+          <a class="source" href="https://medium.com/@GabeRealMedina/is-facebook-messenger-still-experimenting-with-dark-ux-bcbeac45dcb">[1]</a>
         </p>
       </li>
       <li>
         <p>Facebook bo eksperimentiral s tabo in poskusil vplivati na tvoja čustva in povečati čas, ki ga preživiš na njem.
-          <a class="source" href="https://www.washingtonpost.com/news/the-intersect/wp/2014/07/01/9-answers-about-facebooks-creepy-emotional-manipulation-experiment/?utm_term=.370af33cac8e">vir</a>
+          <a class="source" href="https://www.washingtonpost.com/news/the-intersect/wp/2014/07/01/9-answers-about-facebooks-creepy-emotional-manipulation-experiment/?utm_term=.370af33cac8e">[1]</a>
         </p>
       </li>
     </ul>
@@ -507,7 +513,7 @@
     // Add “explain” links
     [].forEach.call(primaryInfo, function (item) {
       var link = document.createElement('button');
-      link.innerHTML = "Kako?";
+      link.innerHTML = "Kako? ➞";
       link.className = "more-info";
       link.onclick = function () {
         link.parentNode.parentNode.className = "open";
