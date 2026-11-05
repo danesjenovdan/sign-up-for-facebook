@@ -8,4 +8,4 @@ resources:
 images:
   - name: uporabljajfacebook
     newName: rg.fr-par.scw.cloud/djnd/uporabljajfacebook
-    newTag: '6d2e5217b44f69f49419726f474281ff9fd59299' #
+    newTag: 'c489f0d8c733097b2038ce67ddd98c45e512b9a9'
